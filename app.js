@@ -10,3 +10,31 @@ $(function() {
 		}
 	})
 })
+
+
+$(document).ready(function() {
+
+    $("#catPiano button").click(function() {
+        var note = $(this).attr('id');
+        switch(note) {
+            case "do":
+                break;
+            case "re":
+                break;
+            case "me":
+                break;
+            case "fa":
+                break;
+            case "so":
+                break;
+            case "la":
+                break;
+            case "ti":
+                break;
+
+        }
+        return false;
+    })
+
+
+})
