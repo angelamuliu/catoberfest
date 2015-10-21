@@ -18,3 +18,7 @@ iframe {
 	width: 99vw; /* hack */
 	margin: 0 auto;
 }
+
+#nav{
+	text-align:center;
+}
