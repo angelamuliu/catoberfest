@@ -1,3 +1,20 @@
+
 img#mrcat {
     width:10%;
+}
+
+html, body {
+	margin: 0;
+	width: 100%;
+}
+
+.header {
+	/*font-size: 30px;*/
+	text-align: center;
+}
+
+iframe {
+	height: 50vh;
+	width: 99vw; /* hack */
+	margin: 0 auto;
 }
