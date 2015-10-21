@@ -10,3 +10,10 @@ $(function() {
 		}
 	})
 })
+
+var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'assets/meow.wav');
+
+        $('.play').click(function() {
+            audioElement.play();
+        });
