@@ -1,13 +1,13 @@
-$(window).load(function() {
+$(function() {
 	// initialize Masonry
-	var container = $('#container').masonry({
+	var container = $('#cats-go-here').masonry({
 		"itemSelector": ".item",
 	    "columnWidth": ".grid-sizer" // references .grid-sizer for how wide image columsns should be
 	});
 
 	$.ajax({
 		type: "GET",
-		url: "https://www.reddit.com/r/cats.json?limit=40",
+		url: "https://www.reddit.com/r/cats.json?limit=20",
 		success: function(result) {
 			console.log(result.data);
 			var urls = [];
@@ -18,10 +18,10 @@ $(window).load(function() {
 					splitUrl[2] = 'i.imgur.com';
 					url = splitUrl.join('/') + '.jpg';
 					// urls.push(url);
-					$('#cats-go-here').append('<div class="item"><img src="'+url+'" class="image"/></div>');
+					container.append('<div class="item"><img src="'+url+'" class="image"/></div>');
 				} else if (splitUrl[2] === 'i.imgur.com') {
 					// urls.push(url);
-					$('#cats-go-here').append('<div class="item"><img src="'+url+'" class="image"/></div>');
+					container.append('<div class="item"><img src="'+url+'" class="image"/></div>');
 				}
 			}
 			// console.log(urls);
