@@ -3,6 +3,12 @@ img#mrcat {
     width:10%;
 }
 
+body {
+background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("http://socialpowerhour.com/wp-content/uploads/2014/10/fall.jpg");
+}
+
 html, body {
 	margin: 0;
 	width: 100%;
@@ -19,10 +25,45 @@ iframe {
 	margin: 0 auto;
 }
 
-body {
-background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url("http://socialpowerhour.com/wp-content/uploads/2014/10/fall.jpg");
+.item {
+    float: left;
+    position: relative;
+    line-height: 1em;
+}
+
+
+/* Account for different sized screens and resizing */
+
+.grid-sizer { width: 20%; }
+.item { width: 20%; }
+
+
+@media screen and (max-width: 1224px) {
+  /* 10 columns for larger screens */
+  .grid-sizer { width: 33.33%; }
+  .item { width: 33.33%; }
+}
+
+@media screen and (max-width: 720px) {
+  /* 10 columns for larger screens */
+  .grid-sizer { width: 50%; }
+  .item { width: 50%; }
+}
+
+@media screen and (max-width: 480px) {
+  /* 10 columns for larger screens */
+  .grid-sizer { width: 100%; }
+  .item { width: 100%; }
+}
+
+.image{
+    max-width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.image:after {
+    clear:both;
 }
 
 #catPiano {
