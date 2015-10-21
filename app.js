@@ -47,7 +47,7 @@ $(document).ready(function() {
                 audio = new Audio('assets/re.wav');
                 break;
             case "me":
-                audio = new Audio('assets/me.wav');
+                audio = new Audio('assets/randys song.mp3');
                 break;
             case "fa":
                 audio = new Audio('assets/fa.wav');
