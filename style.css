@@ -24,6 +24,15 @@ background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url("http://socialpowerhour.com/wp-content/uploads/2014/10/fall.jpg");
 }
+
+#catPiano {
+    background-color: black;
+    padding:10px;
+}
+#catPiano button {
+    padding:10px;
+}
+
 #nav{
 	text-align:center;
 }
