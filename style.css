@@ -3,6 +3,12 @@ img#mrcat {
     width:10%;
 }
 
+body {
+background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("http://socialpowerhour.com/wp-content/uploads/2014/10/fall.jpg");
+}
+
 html, body {
 	margin: 0;
 	width: 100%;
@@ -58,4 +64,16 @@ iframe {
 
 .image:after {
     clear:both;
+}
+
+#catPiano {
+    background-color: black;
+    padding:10px;
+}
+#catPiano button {
+    padding:10px;
+}
+
+#nav{
+	text-align:center;
 }
